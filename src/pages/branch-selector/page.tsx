@@ -265,7 +265,7 @@ export default function BranchSelector() {
         }
 
         .animate-fade-in {
-          animation: fade-in 0.8s ease-out;
+          animation: fade-in 0.8s ease-out forwards;
         }
       `}</style>
     </div>
