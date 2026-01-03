@@ -40,15 +40,15 @@ export default function BranchSelector() {
             id: branch.id,
             name: branch.name,
             slug: branch.slug,
-            address: (contactData?.address && contactData.address.trim() !== '') 
-              ? contactData.address 
-              : (branch.address || 'ChÆ°a cáº­p nháº­t'),
-            phone: (contactData?.phone && contactData.phone.trim() !== '') 
-              ? contactData.phone 
-              : (branch.phone || 'ChÆ°a cáº­p nháº­t'),
-            opening_hours: (contactData?.opening_hours && contactData.opening_hours.trim() !== '') 
-              ? contactData.opening_hours 
-              : (branch.opening_hours || 'LiÃªn há»‡ Ä‘á»ƒ biáº¿t thÃªm')
+            address: (contactData?.address && contactData.address.trim() !== '')
+              ? contactData.address
+              : (branch.address || 'Chưa cập nhật'),
+            phone: (contactData?.phone && contactData.phone.trim() !== '')
+              ? contactData.phone
+              : (branch.phone || 'Chưa cập nhật'),
+            opening_hours: (contactData?.opening_hours && contactData.opening_hours.trim() !== '')
+              ? contactData.opening_hours
+              : (branch.opening_hours || 'Liên hệ để biết thêm')
           };
         })
       );
@@ -121,7 +121,7 @@ export default function BranchSelector() {
               </h1>
             </div>
             <p className="text-xl sm:text-2xl text-white/80 font-light tracking-wide">
-              Chá»n chi nhÃ¡nh gáº§n báº¡n nháº¥t
+              Chọn chi nhánh gần bạn nhất
             </p>
             <div className="mt-4 flex items-center justify-center gap-2">
               <div className="h-px w-12 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
@@ -147,7 +147,7 @@ export default function BranchSelector() {
                 >
                   {/* Gradient Overlay */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${branchColors[index % branchColors.length]} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-                  
+
                   {/* Shine Effect */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
@@ -167,7 +167,7 @@ export default function BranchSelector() {
                       <h2 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-purple-200 group-hover:to-pink-200 transition-all duration-300">
                         {branch.name}
                       </h2>
-                      
+
                       <div className="space-y-3 text-white/70 group-hover:text-white/90 transition-colors duration-300">
                         <div className="flex items-start justify-center gap-3 group">
                           <div className="w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -175,7 +175,7 @@ export default function BranchSelector() {
                           </div>
                           <span className="text-sm sm:text-base text-left break-words max-w-xs">{branch.address}</span>
                         </div>
-                        
+
                         <div className="flex items-center justify-center gap-3">
                           <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
                             <i className="ri-phone-line text-lg"></i>
@@ -194,7 +194,7 @@ export default function BranchSelector() {
                       {/* Action Button */}
                       <div className="pt-4">
                         <div className={`inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r ${branchColors[index % branchColors.length]} rounded-full text-white font-semibold text-sm shadow-lg group-hover:shadow-2xl transition-all duration-300 whitespace-nowrap`}>
-                          <span>Xem chi tiáº¿t</span>
+                          <span>Xem chi tiết</span>
                           <i className="ri-arrow-right-line text-lg w-5 h-5 flex items-center justify-center group-hover:translate-x-1 transition-transform duration-300"></i>
                         </div>
                       </div>
@@ -215,7 +215,7 @@ export default function BranchSelector() {
               <div className="inline-block p-8 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10">
                 <i className="ri-store-2-line text-7xl text-white/30 mb-6 block"></i>
                 <p className="text-white/60 text-xl font-light">
-                  ChÆ°a cÃ³ chi nhÃ¡nh nÃ o
+                  Chưa có chi nhánh nào
                 </p>
               </div>
             </div>
@@ -235,7 +235,7 @@ export default function BranchSelector() {
               </div>
             </div>
             <p className="text-sm text-white/40">
-              Â© 2024 YAGAMI. All rights reserved.
+              © 2024 YAGAMI. All rights reserved.
             </p>
           </div>
         </div>
