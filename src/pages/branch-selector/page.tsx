@@ -42,13 +42,13 @@ export default function BranchSelector() {
             slug: branch.slug,
             address: (contactData?.address && contactData.address.trim() !== '') 
               ? contactData.address 
-              : (branch.address || 'Chưa cập nhật'),
+              : (branch.address || 'ChÆ°a cáº­p nháº­t'),
             phone: (contactData?.phone && contactData.phone.trim() !== '') 
               ? contactData.phone 
-              : (branch.phone || 'Chưa cập nhật'),
+              : (branch.phone || 'ChÆ°a cáº­p nháº­t'),
             opening_hours: (contactData?.opening_hours && contactData.opening_hours.trim() !== '') 
               ? contactData.opening_hours 
-              : (branch.opening_hours || 'Liên hệ để biết thêm')
+              : (branch.opening_hours || 'LiÃªn há»‡ Ä‘á»ƒ biáº¿t thÃªm')
           };
         })
       );
@@ -116,12 +116,12 @@ export default function BranchSelector() {
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
             <div className="inline-block mb-6 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[#FF6B6B] via-[#4ECDC4] to-[#A770EF] blur-2xl opacity-50 animate-pulse"></div>
-              <h1 className="relative text-5xl sm:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-pink-200 tracking-tight">
+              <h1 className="relative text-5xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight">
                 YAGAMI
               </h1>
             </div>
             <p className="text-xl sm:text-2xl text-white/80 font-light tracking-wide">
-              Chọn chi nhánh gần bạn nhất
+              Chá»n chi nhÃ¡nh gáº§n báº¡n nháº¥t
             </p>
             <div className="mt-4 flex items-center justify-center gap-2">
               <div className="h-px w-12 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
@@ -194,7 +194,7 @@ export default function BranchSelector() {
                       {/* Action Button */}
                       <div className="pt-4">
                         <div className={`inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r ${branchColors[index % branchColors.length]} rounded-full text-white font-semibold text-sm shadow-lg group-hover:shadow-2xl transition-all duration-300 whitespace-nowrap`}>
-                          <span>Xem chi tiết</span>
+                          <span>Xem chi tiáº¿t</span>
                           <i className="ri-arrow-right-line text-lg w-5 h-5 flex items-center justify-center group-hover:translate-x-1 transition-transform duration-300"></i>
                         </div>
                       </div>
@@ -215,7 +215,7 @@ export default function BranchSelector() {
               <div className="inline-block p-8 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10">
                 <i className="ri-store-2-line text-7xl text-white/30 mb-6 block"></i>
                 <p className="text-white/60 text-xl font-light">
-                  Chưa có chi nhánh nào
+                  ChÆ°a cÃ³ chi nhÃ¡nh nÃ o
                 </p>
               </div>
             </div>
@@ -235,7 +235,7 @@ export default function BranchSelector() {
               </div>
             </div>
             <p className="text-sm text-white/40">
-              © 2024 YAGAMI. All rights reserved.
+              Â© 2024 YAGAMI. All rights reserved.
             </p>
           </div>
         </div>
